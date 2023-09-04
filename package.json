@@ -12,7 +12,8 @@
     "lint": "eslint src/",
     "test": "jest",
     "changeset": "changeset",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "publish":"npm run build && git add . && git commit -m 'update dist' && git push && npm publish"
   },
   "repository": {
     "type": "git",
